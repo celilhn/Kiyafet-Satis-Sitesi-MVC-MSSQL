@@ -1,0 +1,54 @@
+﻿@*KATEGIRI INDEX*@
+@model IEnumerable<E_Ticaret_Giyim.Models.ALT_KATEGORILER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kategoriler Sayfası</h2>
+
+<p>
+    @Html.ActionLink("Yeni Oluştur", "Create")
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Alt_Kategoriler_ID)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Alt_Kategoriler_Ad)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.KATEGORILER.Kategori_Ad)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Resim_Yol)</th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alt_Kategoriler_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alt_Kategoriler_Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KATEGORILER.Kategori_Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resim_Yol)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new { id = item.Alt_Kategoriler_ID })
+            </td>
+            <td>
+                @Html.ActionLink("Detay", "Details", new { id = item.Alt_Kategoriler_ID })
+            </td>
+            <td>
+                @Html.ActionLink("Sil", "Delete", new { id = item.Alt_Kategoriler_ID })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

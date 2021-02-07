@@ -1,0 +1,73 @@
+﻿@model E_Ticaret_Giyim.Models.URUNLER
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>URUNLER</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Urun ID
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_ID)
+        </dd>
+        <dt>
+            Ürün Ad
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Ad)
+        </dd>
+        <dt>
+            Ürün Açıklama
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Aciklama)
+        </dd>
+        <dt>
+            Ürün Beden
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Beden)
+        </dd>
+        <dt>
+            Ürün Fiyat
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Fiyat)
+        </dd>
+        <dt>
+            Ürün Fotoğraf
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Fotograf)
+        </dd>
+        <dt>
+            Ürün Marka
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Marka)
+        </dd>
+        <dt>
+            Ürün Renk
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Urun_Renk)
+        </dd>
+        <dt>
+            Alt Kategoriler Ad
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ALT_KATEGORILER.Alt_Kategoriler_Ad)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new {  id = Model.Urun_ID  }) |
+    @Html.ActionLink("Listeye Dön", "Index")
+</p>

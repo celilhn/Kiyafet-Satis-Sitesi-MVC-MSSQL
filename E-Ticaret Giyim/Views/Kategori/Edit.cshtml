@@ -1,0 +1,73 @@
+﻿@model E_Ticaret_Giyim.Models.ALT_KATEGORILER
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Düzenle</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>ALT_KATEGORILER</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Kategori_ID)
+
+
+
+
+    <div class="form-group">
+        Alt Kategori Ad
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Alt_Kategoriler_Ad, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Alt_Kategoriler_Ad, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @Html.HiddenFor(model => model.Alt_Kategoriler_Ad)
+
+    <div class="form-group">
+       Cinsiyet ID
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CinsiyetID, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CinsiyetID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @Html.HiddenFor(model => model.CinsiyetID)
+
+    <div class="form-group">
+        Alt Kategori ID
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Alt_Kategoriler_ID, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Alt_Kategoriler_ID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @Html.HiddenFor(model => model.Alt_Kategoriler_ID)
+
+    <div class="form-group">
+       Resim Yol
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Resim_Yol, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Resim_Yol, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @Html.HiddenFor(model => model.Resim_Yol)
+
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Kaydet" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Listeye Dön", "Index")
+</div>
+

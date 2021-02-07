@@ -1,0 +1,47 @@
+﻿@model E_Ticaret_Giyim.Models.EMAIL
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>MAİLLER</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Kullanıcı Adı
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Special1)
+        </dd>
+
+        <dt>
+            Kullanıcı Email
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Special2)
+        </dd>
+
+        <dt>
+            Konu
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Konu)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mesaj)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Listeye Dön", "Index")
+</p>

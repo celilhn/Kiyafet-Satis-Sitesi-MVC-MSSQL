@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1743536a3d3d438ea547519947baa6a4" Name="Diagram1">
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.ALT_KATEGORILER" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.CINSIYET" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.KATEGORILER" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.KULLANICILAR" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.ROL" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.SEPET" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.URUNLER" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.C_SEPET" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_ALT_KATEGORILER_CINSIYET" ManuallyRouted="false" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_ALT_KATEGORILER_KATEGORILER" ManuallyRouted="false" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_URUNLER_ALT_KATEGORILER" ManuallyRouted="false" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_KULLANICILAR_CINSIYET" ManuallyRouted="false" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_KULLANICILAR_ROL" ManuallyRouted="false" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_SEPET_KULLANICILAR" ManuallyRouted="false" />
+        <AssociationConnector Association="E_GIYIM_DBOModel.FK_SEPET_URUNLER" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="E_GIYIM_DBOModel.EMAIL" Width="1.5" PointX="9" PointY="8.625" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

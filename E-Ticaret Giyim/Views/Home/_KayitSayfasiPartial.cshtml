@@ -1,0 +1,67 @@
+﻿@model E_Ticaret_Giyim.Models.KULLANICILAR
+
+
+
+<div class="row justify-content-md-center">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        @using (Html.BeginForm("KayitOl", "Home", FormMethod.Post))
+        {
+            //@Html.ValidationSummary()
+            @Html.AntiForgeryToken()
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Kayıt Sayfası</div>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        Kullanıcı Ad
+                        @Html.TextBoxFor(m => m.Kullanici_Ad, "", new { @class = "form-control", @placeholder = "Ad" })
+                        @Html.ValidationMessageFor(m => m.Kullanici_Ad, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        Kullanıcı Email
+                        @Html.TextBoxFor(m => m.Kullanici_Email, "", new { @class = "form-control", @placeholder = "Email" })
+                        @Html.ValidationMessageFor(m => m.Kullanici_Email, "", new { @class = "badge badge-danger" })
+                        @if (ViewBag.error != null)
+                        {
+                            <span class="badge badge-danger">@ViewBag.error</span>
+                        }
+                    </div>
+                    <div class="form-group">
+                        Kullanıcı Adres
+                        @Html.TextBoxFor(m => m.Kullanici_Adres, "", new { @class = "form-control", @placeholder = "Adres" })
+                        @Html.ValidationMessageFor(m => m.Kullanici_Adres, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                            @Html.LabelFor(m => m.Cinsiyet_ID)
+                            @Html.DropDownListFor(m => m.Cinsiyet_ID, (SelectList)ViewBag.Cinsiyet, "Lütfen Seçiniz", new { @class = "dropdown form-control" })
+                            @Html.ValidationMessageFor(m => m.Cinsiyet_ID, "", new { @class = "badge badge-danger" })
+                        </div>
+                    <div class="form-group">
+                        Bakiye
+                        @Html.TextBoxFor(m => m.Bakiye, "", new { @class = "form-control", @placeholder = "Bakiye" })
+                        @Html.ValidationMessageFor(m => m.Bakiye, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        Kullanıcı Şifre
+                        @Html.PasswordFor(m => m.Kullanici_Sifre, new { @class = "form-control", @placeholder = "Şifre" })
+                        @Html.ValidationMessageFor(m => m.Kullanici_Sifre, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        Kullanıcı Şifre
+                        @Html.PasswordFor(m => m.Kullanici_Sifre, new { @class = "form-control", @placeholder = "Şifreyi Doğrula" })
+                        @Html.ValidationMessageFor(m => m.Kullanici_Sifre, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-danger" value="Kayıt Ol" />
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+

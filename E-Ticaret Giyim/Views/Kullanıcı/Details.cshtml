@@ -1,0 +1,61 @@
+﻿@model E_Ticaret_Giyim.Models.KULLANICILAR
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>KULLANICILAR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Kullanıcı ID
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici_ID)
+        </dd>
+
+        <dt>
+            Kullanıcı Ad
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici_Ad)
+        </dd>
+
+        <dt>
+            Kullanıcı Email
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici_Email)
+        </dd>
+
+        <dt>
+            Kullanıcı Adres
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici_Adres)
+        </dd>
+
+        <dt>
+           Cinsiyet
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CINSIYET.Cinsiyet_Ad)
+        </dd>
+
+        <dt>
+           Rol
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ROL.Rol_Ad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Listeye Dön", "Index")
+</p>

@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="E_GIYIM_DBOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'E_GIYIM_DBO.dbo._SEPET' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="_SEPET">
+          <Key>
+            <PropertyRef Name="_Sepet_ID" />
+            <PropertyRef Name="_Urun_ID" />
+            <PropertyRef Name="_Kullanici_ID" />
+          </Key>
+          <Property Name="_Sepet_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="_Urun_ID" Type="int" Nullable="false" />
+          <Property Name="_Urun_miktar" Type="int" />
+          <Property Name="_Kullanici_ID" Type="int" Nullable="false" />
+          <Property Name="special1" Type="nchar" MaxLength="50" />
+          <Property Name="special2" Type="nchar" MaxLength="50" />
+          <Property Name="special3" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ALT_KATEGORILER">
+          <Key>
+            <PropertyRef Name="Alt_Kategoriler_ID" />
+          </Key>
+          <Property Name="Alt_Kategoriler_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Alt_Kategoriler_Ad" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Resim_Yol" Type="nchar" MaxLength="150" />
+          <Property Name="Kategori_ID" Type="int" Nullable="false" />
+          <Property Name="CinsiyetID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CINSIYET">
+          <Key>
+            <PropertyRef Name="Cinsiyet_ID" />
+          </Key>
+          <Property Name="Cinsiyet_ID" Type="int" Nullable="false" />
+          <Property Name="Cinsiyet_Ad" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EMAIL">
+          <Key>
+            <PropertyRef Name="Email_ID" />
+          </Key>
+          <Property Name="Email_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kullanici_ID" Type="int" Nullable="false" />
+          <Property Name="Konu" Type="nchar" MaxLength="200" Nullable="false" />
+          <Property Name="Mesaj" Type="nchar" MaxLength="700" Nullable="false" />
+          <Property Name="Special1" Type="nchar" MaxLength="50" />
+          <Property Name="Special2" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="KATEGORILER">
+          <Key>
+            <PropertyRef Name="Kategori_ID" />
+          </Key>
+          <Property Name="Kategori_ID" Type="int" Nullable="false" />
+          <Property Name="Kategori_Ad" Type="nchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KULLANICILAR">
+          <Key>
+            <PropertyRef Name="Kullanici_ID" />
+          </Key>
+          <Property Name="Kullanici_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kullanici_Ad" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Kullanici_Email" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Kullanici_Sifre" Type="nchar" MaxLength="200" Nullable="false" />
+          <Property Name="Kullanici_Adres" Type="nchar" MaxLength="250" Nullable="false" />
+          <Property Name="Bakiye" Type="int" />
+          <Property Name="Cinsiyet_ID" Type="int" Nullable="false" />
+          <Property Name="Rol_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ROL">
+          <Key>
+            <PropertyRef Name="Rol_ID" />
+          </Key>
+          <Property Name="Rol_ID" Type="int" Nullable="false" />
+          <Property Name="Rol_Ad" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SEPET">
+          <Key>
+            <PropertyRef Name="Sepet_ID" />
+          </Key>
+          <Property Name="Sepet_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_ID" Type="int" Nullable="false" />
+          <Property Name="Kullanici_ID" Type="int" Nullable="false" />
+          <Property Name="Urun_Adet" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="URUNLER">
+          <Key>
+            <PropertyRef Name="Urun_ID" />
+          </Key>
+          <Property Name="Urun_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_Ad" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Urun_Aciklama" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Urun_Fiyat" Type="int" Nullable="false" />
+          <Property Name="Urun_Fotograf" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Urun_Beden" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Urun_Renk" Type="nchar" MaxLength="15" Nullable="false" />
+          <Property Name="Urun_Marka" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="Alt_Kategori_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ALT_KATEGORILER_CINSIYET">
+          <End Role="CINSIYET" Type="Self.CINSIYET" Multiplicity="1" />
+          <End Role="ALT_KATEGORILER" Type="Self.ALT_KATEGORILER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CINSIYET">
+              <PropertyRef Name="Cinsiyet_ID" />
+            </Principal>
+            <Dependent Role="ALT_KATEGORILER">
+              <PropertyRef Name="CinsiyetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ALT_KATEGORILER_KATEGORILER">
+          <End Role="KATEGORILER" Type="Self.KATEGORILER" Multiplicity="1" />
+          <End Role="ALT_KATEGORILER" Type="Self.ALT_KATEGORILER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KATEGORILER">
+              <PropertyRef Name="Kategori_ID" />
+            </Principal>
+            <Dependent Role="ALT_KATEGORILER">
+              <PropertyRef Name="Kategori_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KULLANICILAR_CINSIYET">
+          <End Role="CINSIYET" Type="Self.CINSIYET" Multiplicity="1" />
+          <End Role="KULLANICILAR" Type="Self.KULLANICILAR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CINSIYET">
+              <PropertyRef Name="Cinsiyet_ID" />
+            </Principal>
+            <Dependent Role="KULLANICILAR">
+              <PropertyRef Name="Cinsiyet_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KULLANICILAR_ROL">
+          <End Role="ROL" Type="Self.ROL" Multiplicity="1" />
+          <End Role="KULLANICILAR" Type="Self.KULLANICILAR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROL">
+              <PropertyRef Name="Rol_ID" />
+            </Principal>
+            <Dependent Role="KULLANICILAR">
+              <PropertyRef Name="Rol_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SEPET_KULLANICILAR">
+          <End Role="KULLANICILAR" Type="Self.KULLANICILAR" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SEPET" Type="Self.SEPET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KULLANICILAR">
+              <PropertyRef Name="Kullanici_ID" />
+            </Principal>
+            <Dependent Role="SEPET">
+              <PropertyRef Name="Kullanici_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SEPET_URUNLER">
+          <End Role="URUNLER" Type="Self.URUNLER" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SEPET" Type="Self.SEPET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="SEPET">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_URUNLER_ALT_KATEGORILER">
+          <End Role="ALT_KATEGORILER" Type="Self.ALT_KATEGORILER" Multiplicity="1" />
+          <End Role="URUNLER" Type="Self.URUNLER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALT_KATEGORILER">
+              <PropertyRef Name="Alt_Kategoriler_ID" />
+            </Principal>
+            <Dependent Role="URUNLER">
+              <PropertyRef Name="Alt_Kategori_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="E_GIYIM_DBOModelStoreContainer">
+          <EntitySet Name="ALT_KATEGORILER" EntityType="Self.ALT_KATEGORILER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CINSIYET" EntityType="Self.CINSIYET" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMAIL" EntityType="Self.EMAIL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KATEGORILER" EntityType="Self.KATEGORILER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KULLANICILAR" EntityType="Self.KULLANICILAR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROL" EntityType="Self.ROL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SEPET" EntityType="Self.SEPET" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="URUNLER" EntityType="Self.URUNLER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="_SEPET" EntityType="Self._SEPET" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [_SEPET].[_Sepet_ID] AS [_Sepet_ID], 
+    [_SEPET].[_Urun_ID] AS [_Urun_ID], 
+    [_SEPET].[_Urun_miktar] AS [_Urun_miktar], 
+    [_SEPET].[_Kullanici_ID] AS [_Kullanici_ID], 
+    [_SEPET].[special1] AS [special1], 
+    [_SEPET].[special2] AS [special2], 
+    [_SEPET].[special3] AS [special3]
+    FROM [dbo].[_SEPET] AS [_SEPET]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_ALT_KATEGORILER_CINSIYET" Association="Self.FK_ALT_KATEGORILER_CINSIYET">
+            <End Role="CINSIYET" EntitySet="CINSIYET" />
+            <End Role="ALT_KATEGORILER" EntitySet="ALT_KATEGORILER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ALT_KATEGORILER_KATEGORILER" Association="Self.FK_ALT_KATEGORILER_KATEGORILER">
+            <End Role="KATEGORILER" EntitySet="KATEGORILER" />
+            <End Role="ALT_KATEGORILER" EntitySet="ALT_KATEGORILER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KULLANICILAR_CINSIYET" Association="Self.FK_KULLANICILAR_CINSIYET">
+            <End Role="CINSIYET" EntitySet="CINSIYET" />
+            <End Role="KULLANICILAR" EntitySet="KULLANICILAR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KULLANICILAR_ROL" Association="Self.FK_KULLANICILAR_ROL">
+            <End Role="ROL" EntitySet="ROL" />
+            <End Role="KULLANICILAR" EntitySet="KULLANICILAR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SEPET_KULLANICILAR" Association="Self.FK_SEPET_KULLANICILAR">
+            <End Role="KULLANICILAR" EntitySet="KULLANICILAR" />
+            <End Role="SEPET" EntitySet="SEPET" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SEPET_URUNLER" Association="Self.FK_SEPET_URUNLER">
+            <End Role="URUNLER" EntitySet="URUNLER" />
+            <End Role="SEPET" EntitySet="SEPET" />
+          </AssociationSet>
+          <AssociationSet Name="FK_URUNLER_ALT_KATEGORILER" Association="Self.FK_URUNLER_ALT_KATEGORILER">
+            <End Role="ALT_KATEGORILER" EntitySet="ALT_KATEGORILER" />
+            <End Role="URUNLER" EntitySet="URUNLER" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="E_GIYIM_DBOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ALT_KATEGORILER">
+          <Key>
+            <PropertyRef Name="Alt_Kategoriler_ID" />
+          </Key>
+          <Property Name="Alt_Kategoriler_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Alt_Kategoriler_Ad" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Resim_Yol" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+          <Property Name="Kategori_ID" Type="Int32" Nullable="false" />
+          <Property Name="CinsiyetID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CINSIYET" Relationship="Self.FK_ALT_KATEGORILER_CINSIYET" FromRole="ALT_KATEGORILER" ToRole="CINSIYET" />
+          <NavigationProperty Name="KATEGORILER" Relationship="Self.FK_ALT_KATEGORILER_KATEGORILER" FromRole="ALT_KATEGORILER" ToRole="KATEGORILER" />
+          <NavigationProperty Name="URUNLER" Relationship="Self.FK_URUNLER_ALT_KATEGORILER" FromRole="ALT_KATEGORILER" ToRole="URUNLER" />
+        </EntityType>
+        <EntityType Name="CINSIYET">
+          <Key>
+            <PropertyRef Name="Cinsiyet_ID" />
+          </Key>
+          <Property Name="Cinsiyet_ID" Type="Int32" Nullable="false" />
+          <Property Name="Cinsiyet_Ad" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ALT_KATEGORILER" Relationship="Self.FK_ALT_KATEGORILER_CINSIYET" FromRole="CINSIYET" ToRole="ALT_KATEGORILER" />
+          <NavigationProperty Name="KULLANICILAR" Relationship="Self.FK_KULLANICILAR_CINSIYET" FromRole="CINSIYET" ToRole="KULLANICILAR" />
+        </EntityType>
+        <EntityType Name="KATEGORILER">
+          <Key>
+            <PropertyRef Name="Kategori_ID" />
+          </Key>
+          <Property Name="Kategori_ID" Type="Int32" Nullable="false" />
+          <Property Name="Kategori_Ad" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ALT_KATEGORILER" Relationship="Self.FK_ALT_KATEGORILER_KATEGORILER" FromRole="KATEGORILER" ToRole="ALT_KATEGORILER" />
+        </EntityType>
+        <EntityType Name="KULLANICILAR">
+          <Key>
+            <PropertyRef Name="Kullanici_ID" />
+          </Key>
+          <Property Name="Kullanici_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kullanici_Ad" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Kullanici_Email" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Kullanici_Sifre" Type="String" MaxLength="200" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Kullanici_Adres" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Bakiye" Type="Int32" />
+          <Property Name="Cinsiyet_ID" Type="Int32" Nullable="false" />
+          <Property Name="Rol_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CINSIYET" Relationship="Self.FK_KULLANICILAR_CINSIYET" FromRole="KULLANICILAR" ToRole="CINSIYET" />
+          <NavigationProperty Name="ROL" Relationship="Self.FK_KULLANICILAR_ROL" FromRole="KULLANICILAR" ToRole="ROL" />
+          <NavigationProperty Name="SEPET" Relationship="Self.FK_SEPET_KULLANICILAR" FromRole="KULLANICILAR" ToRole="SEPET" />
+        </EntityType>
+        <EntityType Name="ROL">
+          <Key>
+            <PropertyRef Name="Rol_ID" />
+          </Key>
+          <Property Name="Rol_ID" Type="Int32" Nullable="false" />
+          <Property Name="Rol_Ad" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KULLANICILAR" Relationship="Self.FK_KULLANICILAR_ROL" FromRole="ROL" ToRole="KULLANICILAR" />
+        </EntityType>
+        <EntityType Name="SEPET">
+          <Key>
+            <PropertyRef Name="Sepet_ID" />
+          </Key>
+          <Property Name="Sepet_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_ID" Type="Int32" Nullable="false" />
+          <Property Name="Kullanici_ID" Type="Int32" Nullable="false" />
+          <Property Name="Urun_Adet" Type="Int32" />
+          <NavigationProperty Name="KULLANICILAR" Relationship="Self.FK_SEPET_KULLANICILAR" FromRole="SEPET" ToRole="KULLANICILAR" />
+          <NavigationProperty Name="URUNLER" Relationship="Self.FK_SEPET_URUNLER" FromRole="SEPET" ToRole="URUNLER" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="URUNLER">
+          <Key>
+            <PropertyRef Name="Urun_ID" />
+          </Key>
+          <Property Name="Urun_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_Ad" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Urun_Aciklama" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Urun_Fiyat" Type="Int32" Nullable="false" />
+          <Property Name="Urun_Fotograf" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Urun_Beden" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Urun_Renk" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Urun_Marka" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Alt_Kategori_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ALT_KATEGORILER" Relationship="Self.FK_URUNLER_ALT_KATEGORILER" FromRole="URUNLER" ToRole="ALT_KATEGORILER" />
+          <NavigationProperty Name="SEPET" Relationship="Self.FK_SEPET_URUNLER" FromRole="URUNLER" ToRole="SEPET" />
+        </EntityType>
+        <EntityType Name="C_SEPET">
+          <Key>
+            <PropertyRef Name="C_Sepet_ID" />
+            <PropertyRef Name="C_Urun_ID" />
+            <PropertyRef Name="C_Kullanici_ID" />
+          </Key>
+          <Property Name="C_Sepet_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_Urun_ID" Type="Int32" Nullable="false" />
+          <Property Name="C_Urun_miktar" Type="Int32" />
+          <Property Name="C_Kullanici_ID" Type="Int32" Nullable="false" />
+          <Property Name="special1" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="special2" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="special3" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_ALT_KATEGORILER_CINSIYET">
+          <End Role="CINSIYET" Type="Self.CINSIYET" Multiplicity="1" />
+          <End Role="ALT_KATEGORILER" Type="Self.ALT_KATEGORILER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CINSIYET">
+              <PropertyRef Name="Cinsiyet_ID" />
+            </Principal>
+            <Dependent Role="ALT_KATEGORILER">
+              <PropertyRef Name="CinsiyetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ALT_KATEGORILER_KATEGORILER">
+          <End Role="KATEGORILER" Type="Self.KATEGORILER" Multiplicity="1" />
+          <End Role="ALT_KATEGORILER" Type="Self.ALT_KATEGORILER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KATEGORILER">
+              <PropertyRef Name="Kategori_ID" />
+            </Principal>
+            <Dependent Role="ALT_KATEGORILER">
+              <PropertyRef Name="Kategori_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_URUNLER_ALT_KATEGORILER">
+          <End Role="ALT_KATEGORILER" Type="Self.ALT_KATEGORILER" Multiplicity="1" />
+          <End Role="URUNLER" Type="Self.URUNLER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALT_KATEGORILER">
+              <PropertyRef Name="Alt_Kategoriler_ID" />
+            </Principal>
+            <Dependent Role="URUNLER">
+              <PropertyRef Name="Alt_Kategori_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KULLANICILAR_CINSIYET">
+          <End Role="CINSIYET" Type="Self.CINSIYET" Multiplicity="1" />
+          <End Role="KULLANICILAR" Type="Self.KULLANICILAR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CINSIYET">
+              <PropertyRef Name="Cinsiyet_ID" />
+            </Principal>
+            <Dependent Role="KULLANICILAR">
+              <PropertyRef Name="Cinsiyet_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KULLANICILAR_ROL">
+          <End Role="ROL" Type="Self.ROL" Multiplicity="1" />
+          <End Role="KULLANICILAR" Type="Self.KULLANICILAR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROL">
+              <PropertyRef Name="Rol_ID" />
+            </Principal>
+            <Dependent Role="KULLANICILAR">
+              <PropertyRef Name="Rol_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SEPET_KULLANICILAR">
+          <End Role="KULLANICILAR" Type="Self.KULLANICILAR" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SEPET" Type="Self.SEPET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KULLANICILAR">
+              <PropertyRef Name="Kullanici_ID" />
+            </Principal>
+            <Dependent Role="SEPET">
+              <PropertyRef Name="Kullanici_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SEPET_URUNLER">
+          <End Role="URUNLER" Type="Self.URUNLER" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SEPET" Type="Self.SEPET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="SEPET">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="E_GIYIM_DBOEntities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ALT_KATEGORILER" EntityType="Self.ALT_KATEGORILER" />
+          <EntitySet Name="CINSIYET" EntityType="Self.CINSIYET" />
+          <EntitySet Name="KATEGORILER" EntityType="Self.KATEGORILER" />
+          <EntitySet Name="KULLANICILAR" EntityType="Self.KULLANICILAR" />
+          <EntitySet Name="ROL" EntityType="Self.ROL" />
+          <EntitySet Name="SEPET" EntityType="Self.SEPET" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="URUNLER" EntityType="Self.URUNLER" />
+          <EntitySet Name="C_SEPET" EntityType="Self.C_SEPET" />
+          <AssociationSet Name="FK_ALT_KATEGORILER_CINSIYET" Association="Self.FK_ALT_KATEGORILER_CINSIYET">
+            <End Role="CINSIYET" EntitySet="CINSIYET" />
+            <End Role="ALT_KATEGORILER" EntitySet="ALT_KATEGORILER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ALT_KATEGORILER_KATEGORILER" Association="Self.FK_ALT_KATEGORILER_KATEGORILER">
+            <End Role="KATEGORILER" EntitySet="KATEGORILER" />
+            <End Role="ALT_KATEGORILER" EntitySet="ALT_KATEGORILER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_URUNLER_ALT_KATEGORILER" Association="Self.FK_URUNLER_ALT_KATEGORILER">
+            <End Role="ALT_KATEGORILER" EntitySet="ALT_KATEGORILER" />
+            <End Role="URUNLER" EntitySet="URUNLER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KULLANICILAR_CINSIYET" Association="Self.FK_KULLANICILAR_CINSIYET">
+            <End Role="CINSIYET" EntitySet="CINSIYET" />
+            <End Role="KULLANICILAR" EntitySet="KULLANICILAR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KULLANICILAR_ROL" Association="Self.FK_KULLANICILAR_ROL">
+            <End Role="ROL" EntitySet="ROL" />
+            <End Role="KULLANICILAR" EntitySet="KULLANICILAR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SEPET_KULLANICILAR" Association="Self.FK_SEPET_KULLANICILAR">
+            <End Role="KULLANICILAR" EntitySet="KULLANICILAR" />
+            <End Role="SEPET" EntitySet="SEPET" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SEPET_URUNLER" Association="Self.FK_SEPET_URUNLER">
+            <End Role="URUNLER" EntitySet="URUNLER" />
+            <End Role="SEPET" EntitySet="SEPET" />
+          </AssociationSet>
+          <EntitySet Name="EMAIL" EntityType="E_GIYIM_DBOModel.EMAIL" />
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(E_GIYIM_DBOModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(E_GIYIM_DBOModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <EntityType Name="EMAIL">
+          <Key>
+            <PropertyRef Name="Email_ID" />
+          </Key>
+          <Property Name="Email_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kullanici_ID" Type="Int32" Nullable="false" />
+          <Property Name="Konu" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Mesaj" Type="String" Nullable="false" MaxLength="700" FixedLength="true" Unicode="true" />
+          <Property Name="Special1" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Special2" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="E_GIYIM_DBOModelStoreContainer" CdmEntityContainer="E_GIYIM_DBOEntities4">
+          <EntitySetMapping Name="ALT_KATEGORILER">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.ALT_KATEGORILER">
+              <MappingFragment StoreEntitySet="ALT_KATEGORILER">
+                <ScalarProperty Name="Alt_Kategoriler_ID" ColumnName="Alt_Kategoriler_ID" />
+                <ScalarProperty Name="Alt_Kategoriler_Ad" ColumnName="Alt_Kategoriler_Ad" />
+                <ScalarProperty Name="Resim_Yol" ColumnName="Resim_Yol" />
+                <ScalarProperty Name="Kategori_ID" ColumnName="Kategori_ID" />
+                <ScalarProperty Name="CinsiyetID" ColumnName="CinsiyetID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CINSIYET">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.CINSIYET">
+              <MappingFragment StoreEntitySet="CINSIYET">
+                <ScalarProperty Name="Cinsiyet_ID" ColumnName="Cinsiyet_ID" />
+                <ScalarProperty Name="Cinsiyet_Ad" ColumnName="Cinsiyet_Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KATEGORILER">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.KATEGORILER">
+              <MappingFragment StoreEntitySet="KATEGORILER">
+                <ScalarProperty Name="Kategori_ID" ColumnName="Kategori_ID" />
+                <ScalarProperty Name="Kategori_Ad" ColumnName="Kategori_Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KULLANICILAR">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.KULLANICILAR">
+              <MappingFragment StoreEntitySet="KULLANICILAR">
+                <ScalarProperty Name="Kullanici_ID" ColumnName="Kullanici_ID" />
+                <ScalarProperty Name="Kullanici_Ad" ColumnName="Kullanici_Ad" />
+                <ScalarProperty Name="Kullanici_Email" ColumnName="Kullanici_Email" />
+                <ScalarProperty Name="Kullanici_Sifre" ColumnName="Kullanici_Sifre" />
+                <ScalarProperty Name="Kullanici_Adres" ColumnName="Kullanici_Adres" />
+                <ScalarProperty Name="Bakiye" ColumnName="Bakiye" />
+                <ScalarProperty Name="Cinsiyet_ID" ColumnName="Cinsiyet_ID" />
+                <ScalarProperty Name="Rol_ID" ColumnName="Rol_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROL">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.ROL">
+              <MappingFragment StoreEntitySet="ROL">
+                <ScalarProperty Name="Rol_ID" ColumnName="Rol_ID" />
+                <ScalarProperty Name="Rol_Ad" ColumnName="Rol_Ad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SEPET">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.SEPET">
+              <MappingFragment StoreEntitySet="SEPET">
+                <ScalarProperty Name="Sepet_ID" ColumnName="Sepet_ID" />
+                <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+                <ScalarProperty Name="Kullanici_ID" ColumnName="Kullanici_ID" />
+                <ScalarProperty Name="Urun_Adet" ColumnName="Urun_Adet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="URUNLER">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.URUNLER">
+              <MappingFragment StoreEntitySet="URUNLER">
+                <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+                <ScalarProperty Name="Urun_Ad" ColumnName="Urun_Ad" />
+                <ScalarProperty Name="Urun_Aciklama" ColumnName="Urun_Aciklama" />
+                <ScalarProperty Name="Urun_Fiyat" ColumnName="Urun_Fiyat" />
+                <ScalarProperty Name="Urun_Fotograf" ColumnName="Urun_Fotograf" />
+                <ScalarProperty Name="Urun_Beden" ColumnName="Urun_Beden" />
+                <ScalarProperty Name="Urun_Renk" ColumnName="Urun_Renk" />
+                <ScalarProperty Name="Urun_Marka" ColumnName="Urun_Marka" />
+                <ScalarProperty Name="Alt_Kategori_ID" ColumnName="Alt_Kategori_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C_SEPET">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.C_SEPET">
+              <MappingFragment StoreEntitySet="_SEPET">
+                <ScalarProperty Name="C_Sepet_ID" ColumnName="_Sepet_ID" />
+                <ScalarProperty Name="C_Urun_ID" ColumnName="_Urun_ID" />
+                <ScalarProperty Name="C_Urun_miktar" ColumnName="_Urun_miktar" />
+                <ScalarProperty Name="C_Kullanici_ID" ColumnName="_Kullanici_ID" />
+                <ScalarProperty Name="special1" ColumnName="special1" />
+                <ScalarProperty Name="special2" ColumnName="special2" />
+                <ScalarProperty Name="special3" ColumnName="special3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMAIL">
+            <EntityTypeMapping TypeName="E_GIYIM_DBOModel.EMAIL">
+              <MappingFragment StoreEntitySet="EMAIL">
+                <ScalarProperty Name="Special2" ColumnName="Special2" />
+                <ScalarProperty Name="Special1" ColumnName="Special1" />
+                <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="Kullanici_ID" ColumnName="Kullanici_ID" />
+                <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="E_GIYIM_DBOModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="E_GIYIM_DBOModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="E_GIYIM_DBOModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="E_GIYIM_DBOModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_GIYIM_DBOModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="E_GIYIM_DBOModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="E_GIYIM_DBOModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="E_GIYIM_DBOModel.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="E_GIYIM_DBOModel.Store.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

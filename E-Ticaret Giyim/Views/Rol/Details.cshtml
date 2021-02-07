@@ -1,0 +1,31 @@
+﻿@model E_Ticaret_Giyim.Models.ROL
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>ROL</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Rol ID
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rol_ID)
+        </dd>
+        <dt>
+            Rol Ad
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rol_Ad)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new {  id = Model.Rol_ID  }) |
+    @Html.ActionLink("Listeye Dön", "Index")
+</p>

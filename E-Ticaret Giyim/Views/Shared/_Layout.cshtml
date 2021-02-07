@@ -1,0 +1,338 @@
+﻿@model ViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>E-Kıyafet</title>
+    <meta name="description" content="E-Kıyafet">
+    <meta name="author">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="~/Content/css/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/css/animations.css" media="screen">
+    <link rel="stylesheet" href="~/Content/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="~/Content/css/revolution-slider/css/settings.css" media="screen">
+    <link rel="stylesheet" href="~/Content/css/prettyPhoto.css" media="screen">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/global.css">
+    <!-- Skin -->
+    <link rel="stylesheet" href="~/Content/css/colors/blue.css" class="colors">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/Content/css/theme-responsive.css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/Content/img/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="~/Content/img/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Content/img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Content/img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Content/img/ico/apple-touch-icon-144.png">
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+    <style>
+        .logg p {
+            color: yellow;
+        }
+    </style>
+</head>
+<body class="page">
+    @*<div class="page-mask">
+              <div class="page-loader">
+
+                  <div class="spinner"></div>
+                  Loading...
+              </div>
+
+        </div>*@
+    <div class="wrap">
+        <!-- Header Start -->
+        <header id="header">
+            <!-- Header Top Bar Start -->
+            <div class="top-bar">
+                <div class="slidedown collapse">
+                    <div class="container">
+                        <div class="phone-email pull-left">
+                            <a><i class="fa fa-phone"></i> Ara Bizi : +880 111-111-111</a>
+                            <a href="support@fifothemes.com"><i class="fa fa-envelope"></i> Email : support@ogr.sakarya.edu.tr</a>
+                        </div>
+                        <div class="pull-right">
+                            <ul class="social pull-left">
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                            <div id="search-form" class="pull-right">
+                                <form action="#" method="get">
+                                    <input type="text" class="search-text-box">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top Bar End -->
+            <!-- Main Header Start -->
+            <div class="main-header">
+                <div class="container">
+                    <!-- TopNav Start -->
+                    <div class="topnav navbar-header">
+                        <a class="navbar-toggle down-button" data-toggle="collapse" data-target=".slidedown">
+                            <i class="fa fa-angle-down icon-current"></i>
+                        </a>
+                    </div>
+                    <!-- TopNav End -->
+                    <!-- Logo Start -->
+                    <div class="logo pull-left">
+                        <h1>
+                            <a href="index.html">
+                                <img src="~/images/logo.jpg" alt="pixma" width="125" height="60">
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- Logo End -->
+                    <!-- Mobile Menu Start -->
+                    <div class="mobile navbar-header">
+                        <a class="navbar-toggle" data-toggle="collapse" href=".navbar-collapse">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu End -->
+                    <!-- Menu Start -->
+                    <nav class="collapse navbar-collapse menu">
+                        <ul class="nav navbar-nav sf-menu">
+                            <li>
+                                @Html.ActionLink("Anasayfa", "Index", new { item = 0 })
+
+                            </li>
+                            @foreach (var item in Model.Categories)
+                            {
+                                <li>
+                                    <a href="#" class="sf-with-ul">
+                                        @item.Kategori_Ad
+                                        <span class="sf-sub-indicator">
+                                            <i class="fa fa-angle-down "></i>
+                                        </span>
+                                    </a>
+                                    <ul>
+                                        @foreach (var item2 in Model.Genders)
+                                        {
+                                            <li>
+                                                <a href="#" class="sf-with-ul">
+                                                    @item2.Cinsiyet_Ad
+                                                    <span class="sf-sub-indicator pull-right">
+                                                        <i class="fa fa-angle-right "></i>
+                                                    </span>
+                                                </a>
+                                                <ul>
+                                                    @foreach (var item3 in Model.SubCategories.Where(s => s.Kategori_ID == item.Kategori_ID && s.CinsiyetID == item2.Cinsiyet_ID))
+                                                    {
+                                                        <li>
+                                                            @*<a href="#" class="sf-with-ul">@item3.Alt_Kategoriler_Ad</a>*@
+                                                            @Html.ActionLink(@item3.Alt_Kategoriler_Ad, "Index", new { item = item3.Alt_Kategoriler_ID })
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </li>
+                                        }
+
+                                    </ul>
+                                </li>
+                            }
+
+
+                            <li>
+                                <a href="~/Home/Iletisim">
+                                    İletişim
+                                </a>
+                            </li>
+                            @if (Session["FullName"] == null)
+                            {
+
+
+                                <li>
+                                    <a href="~/Home/Giris" class="logg">
+                                         <p>Giriş</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/Home/KayitOl" class="logg">
+                                        <p>Kayıt Ol</p>
+                                    </a>
+                                </li>
+                            }
+                            @if (Session["FullName"] != null)
+                            {
+                                if (Session["Rol"].ToString() == "2")
+                                {
+                                    <li>
+                                        <a href="~/Admin/Index">
+                                            Admin Paneli
+                                        </a>
+                                    </li>
+                                }
+                                @*<li><p>Kullanıcı: @Session["FullName"].ToString()</p></li>
+            <li><p>Email: @Session["Email"].ToString()</p></li>*@
+                                <li>
+                                    <a href="@Url.Action("Cikis","Home")">Çıkış</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sf-with-ul">
+                                        Hoşgeldin @Session["FullName"]
+                                        <span class="sf-sub-indicator">
+                                            <i class="fa fa-angle-down "></i>
+                                        </span>
+                                    </a>
+                                    <ul>
+                                        
+                                            <li>
+                                                <a href="#" class="sf-with-ul">
+                                                    @Html.ActionLink("Sepet", "Sepet", new { id = @Session["idUser"], ekle = false })
+                                                </a>
+                                            </li>
+                                        
+
+                                    </ul>
+                                </li>
+
+                            }
+
+                        </ul>
+                    </nav>
+                    <!-- Menu End -->
+                </div>
+            </div>
+            <!-- Main Header End -->
+        </header>
+        <!-- Header End -->
+        <!-- Content Start -->
+        <div id="main">
+
+
+
+            @RenderBody()
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- Content End -->
+        <!-- Footer Start -->
+        <footer id="footer">
+            <!-- Footer Top Start -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
+                            <h3>Hakkında</h3>
+                            <p>
+                                2020 yılının 12. ayında kurulmuştur.
+                            </p>
+                        </section>
+                        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
+                            <h3>Twitter Akışı</h3>
+                            <ul id="tweets">
+                            </ul>
+                        </section>
+                        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-three">
+                            <h3>Bizimle İletişime Geç</h3>
+                            <ul class="contact-us">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <p>
+                                        <strong class="contact-pad">Addres:</strong> iş: 325, Cadde: 2,<br> Sakarya Üniversitesi <br>
+                                        Sakarya, Türkiye
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <p><strong>Tel:</strong> +880 111-111-111</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <p><strong>Email:</strong><a href="mailto:support@fifothemes.com">support@ogr.sakarya.edu.tr</a></p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four">
+                            <h3>Flickr Fotoğraf Akışı</h3>
+                            <ul id="flickrfeed" class="thumbs"></ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top End -->
+            <!-- Footer Bottom Start -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 "> &copy; Copyright 2014 by <a href="#">CodeBull</a>. All Rights Reserved. </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                            <ul class="social social-icons-footer-bottom">
+                                <li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>
+                                <li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom End -->
+        </footer>
+        <!-- Scroll To Top -->
+        <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Wrap End -->
+    <!-- The Scripts -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/bootstrap.js"></script>
+
+    <script src="~/Content/js/jquery.parallax.js"></script>
+    <script src="~/Content/js/jquery.wait.js"></script>
+    <script src="~/Content/js/modernizr-2.6.2.min.js"></script>
+    <script src="~/Content/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Content/js/jquery.nivo.slider.pack.js"></script>
+    <script src="~/Content/js/jquery.prettyPhoto.js"></script>
+    <script src="~/Content/js/superfish.js"></script>
+    <script src="~/Content/js/tweetMachine.js"></script>
+    <script src="~/Content/js/tytabs.js"></script>
+    <script src="~/Content/js/jquery.sticky.js"></script>
+    <script src="~/Content/js/jflickrfeed.js"></script>
+    <script src="~/Content/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Content/js/waypoints.min.js"></script>
+    <script src="~/Content/js/jquery.gmap.min.js"></script>
+    <script src="~/Content/js/jquery.isotope.js"></script>
+    <script src="~/Content/js/portfolio.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+
+    <script src="~/Content/js/circularnav.js"></script>
+
+</body>
+</html>

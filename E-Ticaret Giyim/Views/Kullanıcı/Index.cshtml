@@ -1,0 +1,44 @@
+﻿@*KULLANICI INDEX*@
+@model IEnumerable<E_Ticaret_Giyim.Models.KULLANICILAR>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kullanıcılar Sayfası</h2>
+
+<p>
+    @Html.ActionLink("Yeni Oluştur", "Create")
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col"> Kullanıcı Ad</th>
+            <th scope="col"> Kullanıcı Email</th>
+            <th scope="col"> Kullanıcı Adres</th>
+            <th scope="col"> Bakiye</th>
+            <th scope="col"> Cinsiyet</th>
+            <th scope="col"> Rol</th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td> @Html.DisplayFor(modelItem => item.Kullanici_Ad)</td>
+            <td> @Html.DisplayFor(modelItem => item.Kullanici_Email)</td>
+            <td> @Html.DisplayFor(modelItem => item.Kullanici_Adres)</td>
+            <td> @Html.DisplayFor(modelItem => item.Bakiye)</td>
+            <td> @Html.DisplayFor(modelItem => item.CINSIYET.Cinsiyet_Ad)</td>
+            <td> @Html.DisplayFor(modelItem => item.ROL.Rol_Ad)</td>
+            <td> @Html.ActionLink("Düzenle", "Edit", new { id = item.Kullanici_ID })</td>
+            <td> @Html.ActionLink("Detay", "Details", new { id = item.Kullanici_ID })</td>
+            <td> @Html.ActionLink("Sil", "Delete", new { id = item.Kullanici_ID })</td>
+        </tr>
+        }
+    </tbody>
+</table>

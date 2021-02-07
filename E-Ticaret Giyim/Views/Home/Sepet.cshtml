@@ -1,0 +1,37 @@
+﻿@model ViewModel
+@{
+    ViewBag.Title = "Sepet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
+
+<div class="page-wrapper">
+
+    <!-- main-container start -->
+    <!-- ================ -->
+    <section class="main-container">
+
+        <div class="container">
+            <div class="row">
+
+                <!-- main start -->
+                <!-- ================ -->
+                <div class="main col-md-12">
+
+                    <!-- page-title start -->
+                    <!-- ================ -->
+                    <h1 class="page-title">Sepet</h1>
+                    <div class="separator-2"></div>
+                    <!-- page-title end -->
+
+                    @Html.Action("_SepetPartial", "Home", new { id = @ViewData["Id2"].ToString() })
+
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- main-container end -->
+</div>

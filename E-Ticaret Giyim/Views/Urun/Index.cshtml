@@ -1,0 +1,68 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@using E_Ticaret_Giyim.Models
+@model IPagedList<URUNLER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Urunler Sayfası</h2>
+
+<p>
+    @Html.ActionLink("Yeni Oluştur", "Create")
+</p>
+<div id="dvMusteriListesi">
+    <!-- Main Content start-->
+    <div class="content">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col"> Urun ID</th>
+                        <th scope="col"> Urun Ad)</th>
+                        <th scope="col"> Urun Aciklama</th>
+                        <th scope="col"> Urun Beden</th>
+                        <th scope="col"> Urun Fiyat</th>
+                        <th scope="col"> Urun Fotograf</th>
+                        <th scope="col"> Urun Marka</th>
+                        <th scope="col"> Urun Renk</th>
+                        <th scope="col"> Alt Kategorileri Ad</th>
+                        <th scope="col"> </th>
+                        <th scope="col"> </th>
+                        <th scope="col"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        string resimYol = item.Urun_Fotograf;
+                        resimYol = resimYol.Trim();
+                        <tr>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_ID)</th>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_Ad)</th>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_Aciklama)</th>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_Beden)</th>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_Fiyat)</th>
+                            <th>
+                                <img src="~/images/@resimYol" width="100" height="100" />
+                            </th>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_Marka)</th>
+                            <th> @Html.DisplayFor(modelItem => item.Urun_Renk)</th>
+                            <th> @Html.DisplayFor(modelItem => item.ALT_KATEGORILER.Alt_Kategoriler_Ad)</th>
+                            <td> @Html.ActionLink("Düzenle", "Edit", new { id = item.Urun_ID })</td>
+                            <td> @Html.ActionLink("Detay", "Details", new { id = item.Urun_ID })</td>
+                            <td> @Html.ActionLink("Sil", "Delete", new { id = item.Urun_ID })</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+    <!-- Main Content end-->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"></div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        @Html.PagedListPager(Model, _sayfaNo => Url.Action("Index", "Urun", new { SayfaNo = _sayfaNo }))
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"></div>
+
+</div>

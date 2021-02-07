@@ -1,0 +1,58 @@
+﻿@model ViewModel
+
+
+@for (int i = 0; i < 1; i++)
+{
+    int toplam = 0;
+    int toplamUrun = 0;
+    int kullaniciID = 0;
+    <table class="table cart table-hover table-colored">
+        <thead>
+            <tr>
+                <th>Ürün </th>
+                <th>Fiyat </th>
+                <th>Adet </th>
+                <th>Kaldır </th>
+                <th class="amount">Toplam </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            
+            @foreach (var item in Model.Sepets)
+            {
+                kullaniciID = item.Kullanici_ID;
+            <tr class="remove-data">
+                @foreach (var item2 in Model.Products.Where(s => s.Urun_ID == item.Urun_ID))
+                {
+                    <td class="product">@Html.ActionLink(@item2.Urun_Ad, "UrunDetay", new { id = item2.Urun_ID }) <small>@item2.Urun_Aciklama</small></td>
+
+
+                    toplam += @item2.Urun_Fiyat;
+                    <td class="price">@item2.Urun_Fiyat TL </td>
+                    <td class="quantity">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="1">
+                        </div>
+                    </td>
+                    <td class="remove"><a class="btn btn-remove btn-sm btn-default" href="@Url.Action("SatinAl","Home", new { urunId=Convert.ToInt32(ViewData["_urunId"]), sepetId= item.Sepet_ID, kullaniciId=item.Kullanici_ID, para=0, sepet=true })">Kaldır</a></td>
+                    <td class="amount">@item2.Urun_Fiyat TL </td>
+                    @*@Url.Action("SatinAl", "Home", new { id = item.Sepet_ID, para = "sepet" })*@
+                }
+            </tr>
+            toplamUrun++;
+            }
+
+
+            <tr>
+                <td class="total-quantity" colspan="4">Toplam @toplamUrun Ürün</td>
+                <td class="total-amount">@toplam TL</td>
+            </tr>
+            
+
+        </tbody>
+    </table>
+    <div class="text-right">
+        <a href="@Url.Action("SatinAl","Home", new { urunId=Convert.ToInt32(ViewData["_urunId"]), sepetId=0, kullaniciId=kullaniciID, para=toplam, sepet=false })" class="btn btn-group btn-default">Satın Al</a>
+    </div>
+}

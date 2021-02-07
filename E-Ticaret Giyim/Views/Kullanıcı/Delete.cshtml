@@ -1,0 +1,33 @@
+﻿@model E_Ticaret_Giyim.Models.KULLANICILAR
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Sil</h2>
+
+<h3>Bu ürünü silmek istediğine emin misin?</h3>
+<div>
+    <h4>KULLANICILAR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Bakiye
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bakiye)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Listeye Dön", "Index")
+        </div>
+    }
+</div>
