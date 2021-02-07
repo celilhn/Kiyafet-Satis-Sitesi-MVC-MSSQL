@@ -1,0 +1,170 @@
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\E-Ticaret Giyim.dll.config
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\E-Ticaret Giyim.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\E-Ticaret Giyim.pdb
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csc.exe
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csc.exe.config
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csc.rsp
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csi.exe
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csi.exe.config
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csi.rsp
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.AppContext.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Console.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.Compression.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Net.Http.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.ValueTuple.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\vbc.exe
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\vbc.exe.config
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\vbc.rsp
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\VBCSCompiler.exe
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Antlr3.Runtime.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Newtonsoft.Json.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Helpers.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Mvc.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Optimization.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Razor.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Razor.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\WebGrease.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Helpers.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Mvc.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Optimization.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Razor.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Razor.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Newtonsoft.Json.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Antlr3.Runtime.pdb
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.csprojAssemblyReference.cache
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.csproj.CoreCompileInputs.cache
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.csproj.CopyComplete
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.pdb
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.SqlServer.dll
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.xml
+C:\Users\Celilhan\source\repos\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.SqlServer.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\E-Ticaret Giyim.dll.config
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\E-Ticaret Giyim.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\E-Ticaret Giyim.pdb
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csc.exe
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csc.exe.config
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csc.rsp
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csi.exe
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csi.exe.config
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\csi.rsp
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.AppContext.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Console.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.Compression.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Net.Http.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.ValueTuple.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\vbc.exe
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\vbc.exe.config
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\vbc.rsp
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\VBCSCompiler.exe
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Antlr3.Runtime.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.SqlServer.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Newtonsoft.Json.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Helpers.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Mvc.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Optimization.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Razor.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Razor.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\WebGrease.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\EntityFramework.SqlServer.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Helpers.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Mvc.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Optimization.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.Razor.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\System.Web.WebPages.Razor.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Newtonsoft.Json.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Antlr3.Runtime.pdb
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.csprojAssemblyReference.cache
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.csproj.CoreCompileInputs.cache
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.csproj.CopyComplete
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\obj\Debug\E-Ticaret Giyim.pdb
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\PagedList.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\PagedList.Mvc.dll
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\PagedList.xml
+C:\Users\Celilhan\Desktop\VSProject\E_Ticaret_Giyim\E-Ticaret Giyim\bin\PagedList.Mvc.xml
