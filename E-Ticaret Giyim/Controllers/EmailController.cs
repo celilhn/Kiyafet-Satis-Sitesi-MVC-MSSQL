@@ -11,19 +11,19 @@ namespace E_Ticaret_Giyim.Controllers
 {
     public class EmailController : Controller
     {
-        E_GIYIM_DBOEntities4 GiyimModel = new E_GIYIM_DBOEntities4();
+        E_GIYIM_DBOEntities4 clothingModel = new E_GIYIM_DBOEntities4();
 
         // GET: Email
         public ActionResult Index()
         {
-            List<EMAIL> emailList = GiyimModel.EMAIL.ToList();
+            List<EMAIL> emailList = clothingModel.EMAIL.ToList();
             return View(emailList);
         }
 
         // GET: Email/Details/5
         public ActionResult Details(int id)
         {
-            EMAIL emailToDisplay = GiyimModel.EMAIL.Find(id);
+            EMAIL emailToDisplay = clothingModel.EMAIL.Find(id);
             return View(emailToDisplay);
         }
 
@@ -31,7 +31,7 @@ namespace E_Ticaret_Giyim.Controllers
         // GET: Email/Delete/5
         public ActionResult Delete(int id)
         {
-            EMAIL emailToDisplay = GiyimModel.EMAIL.Find(id);
+            EMAIL emailToDisplay = clothingModel.EMAIL.Find(id);
             return View(emailToDisplay);
         }
 
@@ -41,10 +41,10 @@ namespace E_Ticaret_Giyim.Controllers
         {
             try
             {
-                EMAIL emailToBeDeleted = GiyimModel.EMAIL.Find(id);
+                EMAIL emailToBeDeleted = clothingModel.EMAIL.Find(id);
 
-                GiyimModel.EMAIL.Remove(emailToBeDeleted);
-                GiyimModel.SaveChanges();
+                clothingModel.EMAIL.Remove(emailToBeDeleted);
+                clothingModel.SaveChanges();
 
                 return RedirectToAction("Index");
             }
@@ -56,7 +56,7 @@ namespace E_Ticaret_Giyim.Controllers
 
         public ActionResult CevapVer(int id)
         {
-            EMAIL emailToDisplay = GiyimModel.EMAIL.Find(id);
+            EMAIL emailToDisplay = clothingModel.EMAIL.Find(id);
             return View(emailToDisplay);
         }
 
