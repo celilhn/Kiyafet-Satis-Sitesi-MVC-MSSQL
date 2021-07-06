@@ -71,7 +71,7 @@ namespace E_Ticaret_Giyim.Controllers
                 EnableSsl = true,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(fromAddress.Address, "dura3751ChK")
+                Credentials = new NetworkCredential(fromAddress.Address, "*******")
             })
             {
                 using (var message = new MailMessage(fromAddress, toAddress) { Subject = konu, Body = mesaj })
