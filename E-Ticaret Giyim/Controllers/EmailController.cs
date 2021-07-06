@@ -23,16 +23,16 @@ namespace E_Ticaret_Giyim.Controllers
         // GET: Email/Details/5
         public ActionResult Details(int id)
         {
-            EMAIL GoruntulenecekEmail = GiyimModel.EMAIL.Find(id);
-            return View(GoruntulenecekEmail);
+            EMAIL emailToDisplay = GiyimModel.EMAIL.Find(id);
+            return View(emailToDisplay);
         }
 
 
         // GET: Email/Delete/5
         public ActionResult Delete(int id)
         {
-            EMAIL GoruntulenecekEmail = GiyimModel.EMAIL.Find(id);
-            return View(GoruntulenecekEmail);
+            EMAIL emailToDisplay = GiyimModel.EMAIL.Find(id);
+            return View(emailToDisplay);
         }
 
         // POST: Email/Delete/5
@@ -41,9 +41,9 @@ namespace E_Ticaret_Giyim.Controllers
         {
             try
             {
-                EMAIL silinecekEmail = GiyimModel.EMAIL.Find(id);
+                EMAIL emailToBeDeleted = GiyimModel.EMAIL.Find(id);
 
-                GiyimModel.EMAIL.Remove(silinecekEmail);
+                GiyimModel.EMAIL.Remove(emailToBeDeleted);
                 GiyimModel.SaveChanges();
 
                 return RedirectToAction("Index");
@@ -56,8 +56,8 @@ namespace E_Ticaret_Giyim.Controllers
 
         public ActionResult CevapVer(int id)
         {
-            EMAIL GoruntulenecekEmail = GiyimModel.EMAIL.Find(id);
-            return View(GoruntulenecekEmail);
+            EMAIL emailToDisplay = GiyimModel.EMAIL.Find(id);
+            return View(emailToDisplay);
         }
 
         public ActionResult MesajGonder(string konu, string mesaj, string kime)
